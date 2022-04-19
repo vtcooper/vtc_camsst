@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/48502/cam1/trunk_tags/cam5_3_05/models/atm/cam/tools/icesst/bcgen
+END
+types.f90
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/48502/cam1/trunk_tags/cam5_3_05/models/atm/cam/tools/icesst/bcgen/types.f90
+END
+calcfull.f90
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/48502/cam1/trunk_tags/cam5_3_05/models/atm/cam/tools/icesst/bcgen/calcfull.f90
+END
+calcclim.f90
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/48502/cam1/trunk_tags/cam5_3_05/models/atm/cam/tools/icesst/bcgen/calcclim.f90
+END
+setup_outfile.f90
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/48502/cam1/trunk_tags/cam5_3_05/models/atm/cam/tools/icesst/bcgen/setup_outfile.f90
+END
+output_dateinfo.f90
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/!svn/ver/48502/cam1/trunk_tags/cam5_3_05/models/atm/cam/tools/icesst/bcgen/output_dateinfo.f90
+END
+prec.f90
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/48502/cam1/trunk_tags/cam5_3_05/models/atm/cam/tools/icesst/bcgen/prec.f90
+END
+solver.f90
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/48502/cam1/trunk_tags/cam5_3_05/models/atm/cam/tools/icesst/bcgen/solver.f90
+END
+driver.f90
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/48502/cam1/trunk_tags/cam5_3_05/models/atm/cam/tools/icesst/bcgen/driver.f90
+END
+wrap_nf.f90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/48502/cam1/trunk_tags/cam5_3_05/models/atm/cam/tools/icesst/bcgen/wrap_nf.f90
+END
+bcgen.f90
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/48502/cam1/trunk_tags/cam5_3_05/models/atm/cam/tools/icesst/bcgen/bcgen.f90
+END
+namelist
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/48502/cam1/trunk_tags/cam5_3_05/models/atm/cam/tools/icesst/bcgen/namelist
+END
+types.inc
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/48502/cam1/trunk_tags/cam5_3_05/models/atm/cam/tools/icesst/bcgen/types.inc
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/48502/cam1/trunk_tags/cam5_3_05/models/atm/cam/tools/icesst/bcgen/Makefile
+END

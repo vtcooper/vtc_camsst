@@ -1,0 +1,15 @@
+Vince Cooper Sep-2021:
+
+I started porting bcgen over to python but didnt finish.
+Here are notes on my personal hybrid python / bcgen way
+to get boundary conditions from some arbitrary monthly 
+mean data ready for CAM.
+
+Trying to use bcgen myself on some data, and had success without using the “regridding” step
+Step 1: take data and use my prep_cam_bc.iypnb (on sipn in p2c2/lgm folder) to get the data into the right grid / format for CAM
+This is the pre-bcgen regridding step, done in python
+Step 2:  use my prep_preddidle.ipynb on cheyenne to get the data ready for bcgen, which involves poaching some dates from other files
+Step 3: copy that file or link it into /glade/work/vcooper/p2c2/vtc_camsst/ydong_bcgen/bcgen, maybe adjust ‘namelist’ according to clunky explanation, then run “./bcgen -i lgm_bc_final_prediddle_ready4bcgen.nc -c lgm_sstice_clim.nc -t lgm_sstice_ts.nc < namelist” to get your climo and ts files
+
+That climo is ready for cam, I think.
+

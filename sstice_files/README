@@ -1,0 +1,10 @@
+This main folder has files that are scratchwork prepping for CAM. 
+
+I have used my prep_cam_bc.ipynb on UW atmos servers to do the
+prediddle steps. Then I send those files to this folder, I adjust
+them using prep_prediddle.ipynb one final time, then I plug
+them into the bcgen utility. After that, they are placed in the
+ready4cam folder.
+
+-Vince Cooper, 29 Mar 2022
+
