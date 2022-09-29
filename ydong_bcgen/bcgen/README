@@ -14,3 +14,26 @@ Step 3: copy that file or link it into /glade/work/vcooper/p2c2/vtc_camsst/ydong
 That climo is ready for cam, I think.
 I copy the files into: /glade/work/vcooper/p2c2/vtc_camsst/sstice_files/readyforCAM
 after step 3.
+
+
+./bcgen -i lgmDA_ecs2x_bc_final_prediddle_ready4bcgen.nc -c lgmDAecs2x_sstice_clim.nc -t lgmDAecs2x_sstice_ts.nc < namelist
+
+./bcgen -i lrmip-holoice_bc_final_prediddle_v21b_ready4bcgen.nc -c lrmip-holoice_sstice_clim_v21b.nc -t lrmip-holoice_sstice_ts_v21b.nc < namelist
+
+./bcgen -i annanseas2_amrheinice_bc_final_prediddle_ready4bcgen.nc -c annanseas2amrheinice_sstice_clim.nc -t annanseas2amrheinice_sstice_ts.nc < namelist
+
+./bcgen -i uniform_lrmipj_bc_final_prediddle_ready4bcgen.nc -c uniform_lrmipj_sstice_clim.nc -t uniform_lrmipj_sstice_ts.nc < namelist
+./bcgen -i uniform_LGMRj_bc_final_prediddle_ready4bcgen.nc -c uniform_LGMRj_sstice_clim.nc -t uniform_LGMRj_sstice_ts.nc < namelist
+./bcgen -i uniform_amrhein_bc_final_prediddle_ready4bcgen.nc -c uniform_amrhein_sstice_clim.nc -t uniform_amrhein_sstice_ts.nc < namelist
+
+./bcgen -i annan_by05_bc_final_prediddle_ready4bcgen.nc -c annan_by05_sstice_clim.nc -t annan_by05_sstice_ts.nc < namelist
+./bcgen -i amrhein_by05_bc_final_prediddle_ready4bcgen.nc -c amrhein_by05_sstice_clim.nc -t amrhein_by05_sstice_ts.nc < namelist
+./bcgen -i LGMR_by05_bc_final_prediddle_ready4bcgen.nc -c LGMR_by05_sstice_clim.nc -t LGMR_by05_sstice_ts.nc < namelist
+./bcgen -i lgmDA_by05_bc_final_prediddle_ready4bcgen.nc -c lgmDA_by05_sstice_clim.nc -t lgmDA_by05_sstice_ts.nc < namelist
+./bcgen -i lrmipseas_by05_bc_final_prediddle_ready4bcgen.nc -c lrmipseas_by05_sstice_clim.nc -t lrmipseas_by05_sstice_ts.nc < namelist
+./bcgen -i lrmipseas_by05pos_bc_final_prediddle_ready4bcgen.nc -c lrmipseas_by05pos_sstice_clim.nc -t lrmipseas_by05pos_sstice_ts.nc < namelist
+
+
+./bcgen -i lrmipseas_add025pos_bc_final_prediddle_ready4bcgen.nc -c lrmipseas_add025pos_sstice_clim.nc -t lrmipseas_add025pos_sstice_ts.nc < namelist
+
+

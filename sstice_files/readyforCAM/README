@@ -1,1 +1,5 @@
-These data have gone through bcgen and should be ready to use as sstice input data for CAM
+These data have gone through bcgen and should be ready to use as sstice input data for CAM.
+
+Note: lgmDAnorm*.nc~ has been copied and is same file as lgmnorm*.nc because
+the 'DA' string was not included in the case builds when specifying SSTICEFILE.
+Important thing to know is that lgmnorm*.nc is from the lgmDA dataset.
