@@ -11,7 +11,7 @@ This is the pre-bcgen regridding step, done in python
 Step 2:  use my prep_preddidle.ipynb on cheyenne to get the data ready for bcgen, which involves poaching some dates from other files
 Step 3: copy that file or link it into /glade/work/vcooper/p2c2/vtc_camsst/ydong_bcgen/bcgen, maybe adjust ‘namelist’ according to clunky explanation, then run “./bcgen -i lgm_bc_final_prediddle_ready4bcgen.nc -c lgm_sstice_clim.nc -t lgm_sstice_ts.nc < namelist” to get your climo and ts files
 
-That climo is ready for cam, I think.
+That climo is ready for cam.
 I copy the files into: /glade/work/vcooper/p2c2/vtc_camsst/sstice_files/readyforCAM
 after step 3.
 
@@ -32,8 +32,10 @@ after step 3.
 ./bcgen -i lgmDA_by05_bc_final_prediddle_ready4bcgen.nc -c lgmDA_by05_sstice_clim.nc -t lgmDA_by05_sstice_ts.nc < namelist
 ./bcgen -i lrmipseas_by05_bc_final_prediddle_ready4bcgen.nc -c lrmipseas_by05_sstice_clim.nc -t lrmipseas_by05_sstice_ts.nc < namelist
 ./bcgen -i lrmipseas_by05pos_bc_final_prediddle_ready4bcgen.nc -c lrmipseas_by05pos_sstice_clim.nc -t lrmipseas_by05pos_sstice_ts.nc < namelist
-
+./bcgen -i lrmipseas_byColdLGMR_bc_final_prediddle_ready4bcgen.nc -c lrmipseas_byColdLGMR_sstice_clim.nc -t lrmipseas_byColdLGMR_sstice_ts.nc < namelis
 
 ./bcgen -i lrmipseas_add025pos_bc_final_prediddle_ready4bcgen.nc -c lrmipseas_add025pos_sstice_clim.nc -t lrmipseas_add025pos_sstice_ts.nc < namelist
 
-
+./bcgen -i LGMR_byLRMIP_bc_final_prediddle_ready4bcgen.nc -c LGMR_byLRMIP_sstice_clim.nc -t LGMR_byLRMIP_sstice_ts.nc < namelist
+./bcgen -i LGMRholo_bc_final_prediddle_v3_ready4bcgen.nc -c LGMRholo_sstice_clim_v3.nc -t LGMRholo_sstice_ts_v3.nc < namelist
+./bcgen -i LGMRlgm_bc_final_prediddle_v3_ready4bcgen.nc -c LGMRlgm_sstice_clim_v3.nc -t LGMRlgm_sstice_ts_v3.nc < namelist
