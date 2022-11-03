@@ -39,3 +39,5 @@ after step 3.
 ./bcgen -i LGMR_byLRMIP_bc_final_prediddle_ready4bcgen.nc -c LGMR_byLRMIP_sstice_clim.nc -t LGMR_byLRMIP_sstice_ts.nc < namelist
 ./bcgen -i LGMRholo_bc_final_prediddle_v3_ready4bcgen.nc -c LGMRholo_sstice_clim_v3.nc -t LGMRholo_sstice_ts_v3.nc < namelist
 ./bcgen -i LGMRlgm_bc_final_prediddle_v3_ready4bcgen.nc -c LGMRlgm_sstice_clim_v3.nc -t LGMRlgm_sstice_ts_v3.nc < namelist
+./bcgen -i annanseasBYamrhein_05p_bc_final_prediddle_ready4bcgen.nc -c annanseasBYamrhein_05p_sstice_clim.nc -t annanseasBYamrhein_05p_sstice_ts.nc < namelist
+./bcgen -i annanseasBYamrhein_95p_bc_final_prediddle_ready4bcgen.nc -c annanseasBYamrhein_95p_sstice_clim.nc -t annanseasBYamrhein_95p_sstice_ts.nc < namelist
