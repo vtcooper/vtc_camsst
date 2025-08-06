@@ -9,7 +9,8 @@ Trying to use bcgen myself on some data, and had success without using the “re
 Step 1: take data and use my prep_cam_bc.iypnb (on sipn in p2c2/lgm folder) to get the data into the right grid / format for CAM
 This is the pre-bcgen regridding step, done in python
 Step 2:  use my prep_preddidle.ipynb on cheyenne to get the data ready for bcgen, which involves poaching some dates from other files
-Step 3: copy that file or link it into /glade/work/vcooper/p2c2/vtc_camsst/ydong_bcgen/bcgen, maybe adjust ‘namelist’ according to clunky explanation, then run “./bcgen -i lgm_bc_final_prediddle_ready4bcgen.nc -c lgm_sstice_clim.nc -t lgm_sstice_ts.nc < namelist” to get your climo and ts files
+Step 3: copy that file or link it into /glade/work/vcooper/p2c2/vtc_camsst/ydong_bcgen/bcgen, maybe adjust ‘namelist’ according to clunky explanation, 
+then run “./bcgen -i lgm_bc_final_prediddle_ready4bcgen.nc -c lgm_sstice_clim.nc -t lgm_sstice_ts.nc < namelist” to get your climo and ts files
 
 That climo is ready for cam.
 I copy the files into: /glade/work/vcooper/p2c2/vtc_camsst/sstice_files/readyforCAM
@@ -41,3 +42,62 @@ after step 3.
 ./bcgen -i LGMRlgm_bc_final_prediddle_v3_ready4bcgen.nc -c LGMRlgm_sstice_clim_v3.nc -t LGMRlgm_sstice_ts_v3.nc < namelist
 ./bcgen -i annanseasBYamrhein_05p_bc_final_prediddle_ready4bcgen.nc -c annanseasBYamrhein_05p_sstice_clim.nc -t annanseasBYamrhein_05p_sstice_ts.nc < namelist
 ./bcgen -i annanseasBYamrhein_95p_bc_final_prediddle_ready4bcgen.nc -c annanseasBYamrhein_95p_sstice_clim.nc -t annanseasBYamrhein_95p_sstice_ts.nc < namelist
+
+./bcgen -i LGMRlgm05th_bc_final_prediddle_v3_ready4bcgen.nc -c LGMRlgm05th_sstice_clim_v3.nc -t LGMRlgm05th_sstice_ts_v3.nc < namelist
+./bcgen -i LGMRlgm95th_bc_final_prediddle_v3_ready4bcgen.nc -c LGMRlgm95th_sstice_clim_v3.nc -t LGMRlgm95th_sstice_ts_v3.nc < namelist
+
+./bcgen -i LGMR_byLRMIPwLGMice_bc_final_prediddle_ready4bcgen.nc -c LGMR_byLRMIPwLGMice_sstice_clim_v3.nc -t LGMR_byLRMIPwLGMice_sstice_ts_v3.nc < namelist
+./bcgen -i lrmipseas_byLRMIPwLGMice_bc_final_prediddle_ready4bcgen.nc -c lrmipseas_byLRMIPwLGMice_sstice_clim_v3.nc -t lrmipseas_byLRMIPwLGMice_sstice_ts_v3.nc < namelist
+./bcgen -i LGMRholo_wLGMice_bc_final_prediddle_v3_ready4bcgen.nc -c LGMRholo_wLGMice_sstice_clim_v3.nc -t LGMRholo_wLGMice_sstice_ts_v3.nc < namelist
+
+./bcgen -i LGMR_by05_bc_final_prediddle_v3_ready4bcgen.nc -c LGMR_by05_sstice_clim_v3.nc -t LGMR_by05_sstice_ts_v3.nc < namelist
+./bcgen -i lrmipseas_by05_bc_final_prediddle_v3_ready4bcgen.nc -c lrmipseas_by05_sstice_clim_v3.nc -t lrmipseas_by05_sstice_ts_v3.nc < namelist
+
+./bcgen -i LGMRlgm1q_bc_final_prediddle_v3_ready4bcgen.nc -c LGMRlgm1q_sstice_clim_v3.nc -t LGMRlgm1q_sstice_ts_v3.nc < namelist
+./bcgen -i annanseasBYamrhein_1q_bc_final_prediddle_ready4bcgen.nc -c annanseasBYamrhein_1q_sstice_clim.nc -t annanseasBYamrhein_1q_sstice_ts.nc < namelist
+./bcgen -i annanseasBYamrhein_4q_bc_final_prediddle_ready4bcgen.nc -c annanseasBYamrhein_4q_sstice_clim.nc -t annanseasBYamrhein_4q_sstice_ts.nc < namelist
+
+
+
+./bcgen -i tplio_v0_ready4bcgen.nc -c tplio_v0_sstice_clim.nc -t tplio_v0_sstice_ts.nc < namelist
+./bcgen -i annanplio_v0_ready4bcgen.nc -c annanplio_v0_sstice_clim.nc -t annanplio_v0_sstice_ts.nc < namelist
+
+./bcgen -i tplio_v1_ready4bcgen.nc -c tplio_v1_sstice_clim.nc -t tplio_v1_sstice_ts.nc < namelist
+./bcgen -i annanplio_v2_ready4bcgen.nc -c annanplio_v2_sstice_clim.nc -t annanplio_v2_sstice_ts.nc < namelist
+
+-- NOTE: CHANGED NAMELIST so it is no longer based on the 2015-2017 dummy period
+./bcgen -i limDA_ensmean_v0_ready4bcgen.nc -c limDA_ensmean_v0_sstice_clim.nc -t limDA_ensmean_v0_sstice_ts.nc < namelist
+
+-- NOTE: reverted NAMELIST so it is based on the 2015-2017 dummy period
+./bcgen -i tplio_vF_ready4bcgen.nc -c tplio_vF_sstice_clim.nc -t tplio_vF_sstice_ts.nc < namelist
+./bcgen -i tplio_vFpliomip_ready4bcgen.nc -c tplio_vFpliomip_sstice_clim.nc -t tplio_vFpliomip_sstice_ts.nc < namelist
+./bcgen -i tplio_vFpliovar_ready4bcgen.nc -c tplio_vFpliovar_sstice_clim.nc -t tplio_vFpliovar_sstice_ts.nc < namelist
+./bcgen -i tplio_vFcloud_ready4bcgen.nc -c tplio_vFcloud_sstice_clim.nc -t tplio_vFcloud_sstice_ts.nc < namelist
+
+./bcgen -i annanplioPosF_v2_ready4bcgen.nc -c annanplioPosF_v2_sstice_clim.nc -t annanplioPosF_v2_sstice_ts.nc < namelist
+./bcgen -i annanplioNegF_v2_ready4bcgen.nc -c annanplioNegF_v2_sstice_clim.nc -t annanplioNegF_v2_sstice_ts.nc < namelist
+
+./bcgen -i tplio_vFpos95p_ready4bcgen.nc -c tplio_vFpos95p_sstice_clim.nc -t tplio_vFpos95p_sstice_ts.nc < namelist
+./bcgen -i tplio_vFneg05p_ready4bcgen.nc -c tplio_vFneg05p_sstice_clim.nc -t tplio_vFneg05p_sstice_ts.nc < namelist
+
+-- NOTE: CHANGED NAMELIST so it is no longer based on the 2015-2017 dummy period
+./bcgen -i limDA_8medians_E3SM-2-0hist_ready4bcgen.nc -c limDA_8medians_E3SM-2-0hist_sstice_clim.nc -t limDA_8medians_E3SM-2-0hist_sstice_ts.nc < namelist
+./bcgen -i limDA_8medians_NorESM2-LMhist_ready4bcgen.nc -c limDA_8medians_NorESM2-LMhist_sstice_clim.nc -t limDA_8medians_NorESM2-LMhist_sstice_ts.nc < namelist
+./bcgen -i limDA_8medians_EC-Earth3hist_ready4bcgen.nc -c limDA_8medians_EC-Earth3hist_sstice_clim.nc -t limDA_8medians_EC-Earth3hist_sstice_ts.nc < namelist
+./bcgen -i limDA_8medians_CESM2hist_ready4bcgen.nc -c limDA_8medians_CESM2hist_sstice_clim.nc -t limDA_8medians_CESM2hist_sstice_ts.nc < namelist
+./bcgen -i limDA_8medians_UKESM1.0-LLhist_ready4bcgen.nc -c limDA_8medians_UKESM1.0-LLhist_sstice_clim.nc -t limDA_8medians_UKESM1.0-LLhist_sstice_ts.nc < namelist
+./bcgen -i limDA_8medians_GFDL-ESM4hist_ready4bcgen.nc -c limDA_8medians_GFDL-ESM4hist_sstice_clim.nc -t limDA_8medians_GFDL-ESM4hist_sstice_ts.nc < namelist
+./bcgen -i limDA_8medians_SAM0-UNICONhist_ready4bcgen.nc -c limDA_8medians_SAM0-UNICONhist_sstice_clim.nc -t limDA_8medians_SAM0-UNICONhist_sstice_ts.nc < namelist
+./bcgen -i limDA_8medians_HadGEM3-GC31-LLhist_ready4bcgen.nc -c limDA_8medians_HadGEM3-GC31-LLhist_sstice_clim.nc -t limDA_8medians_HadGEM3-GC31-LLhist_sstice_ts.nc < namelist
+
+./bcgen -i limDA_random8_E3SM-2-0hist_ready4bcgen.nc -c limDA_random8_E3SM-2-0hist_sstice_clim.nc -t limDA_random8_E3SM-2-0hist_sstice_ts.nc < namelist
+./bcgen -i limDA_random8_NorESM2-LMhist_ready4bcgen.nc -c limDA_random8_NorESM2-LMhist_sstice_clim.nc -t limDA_random8_NorESM2-LMhist_sstice_ts.nc < namelist
+./bcgen -i limDA_random8_EC-Earth3hist_ready4bcgen.nc -c limDA_random8_EC-Earth3hist_sstice_clim.nc -t limDA_random8_EC-Earth3hist_sstice_ts.nc < namelist
+./bcgen -i limDA_random8_CESM2hist_ready4bcgen.nc -c limDA_random8_CESM2hist_sstice_clim.nc -t limDA_random8_CESM2hist_sstice_ts.nc < namelist
+./bcgen -i limDA_random8_UKESM1.0-LLhist_ready4bcgen.nc -c limDA_random8_UKESM1.0-LLhist_sstice_clim.nc -t limDA_random8_UKESM1.0-LLhist_sstice_ts.nc < namelist
+./bcgen -i limDA_random8_GFDL-ESM4hist_ready4bcgen.nc -c limDA_random8_GFDL-ESM4hist_sstice_clim.nc -t limDA_random8_GFDL-ESM4hist_sstice_ts.nc < namelist
+./bcgen -i limDA_random8_SAM0-UNICONhist_ready4bcgen.nc -c limDA_random8_SAM0-UNICONhist_sstice_clim.nc -t limDA_random8_SAM0-UNICONhist_sstice_ts.nc < namelist
+./bcgen -i limDA_random8_HadGEM3-GC31-LLhist_ready4bcgen.nc -c limDA_random8_HadGEM3-GC31-LLhist_sstice_clim.nc -t limDA_random8_HadGEM3-GC31-LLhist_sstice_ts.nc < namelist
+
+Don't forget to copy the results to: /glade/work/vcooper/p2c2/vtc_camsst/sstice_files/readyforCAM/
+And to: ~/projects/plio_pattern/data/bc_prep/final_bc/
